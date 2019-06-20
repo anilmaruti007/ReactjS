@@ -5,9 +5,12 @@
 // }
 import React from 'react'
 
-const person = () => {
+const person = (props) => {
     return(
-        <h2>Hi, Welcome</h2>
+        <div>
+            <p>I am {props.name} and {props.age} old</p>
+            <p>{props.children}</p>
+        </div>
     )
 }
 
